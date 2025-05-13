@@ -1,0 +1,58 @@
+export const products = [
+  {
+    category: "Generative",
+    img: "/imgs/image-asset (1).jpeg",
+    title: "untitled-space-1",
+    author: "Menoe",
+    price: "$120",
+  },
+  {
+    category: "Colorful",
+    img: "/imgs/image-asset (2).jpeg",
+    title: "A simple code for complex lives",
+    author: "Moroco",
+    price: "$80",
+  },
+  {
+    category: "Minimal",
+    img: "/imgs/image-asset (3).jpeg",
+    title: "Night city life",
+    author: "Mavak",
+    price: "$110",
+  },
+  {
+    category: "Abstract",
+    img: "/imgs/image-asset (4).jpeg",
+    title: "The Emblem",
+    author: "Innersearcher",
+    price: "$200",
+  },
+  {
+    category: "Generative",
+    img: "/imgs/image-asset (5).jpeg",
+    title: "Movement",
+    author: "Innersearcher",
+    price: "$49",
+  },
+  {
+    category: "Abstract",
+    img: "/imgs/image-asset (6).jpeg",
+    title: "Harmonic",
+    author: "TwinEight",
+    price: "$40",
+  },
+  {
+    category: "Colorful",
+    img: "/imgs/image-asset (7).jpeg",
+    title: "Connect 4",
+    author: "Michael Koning",
+    price: "$40",
+  },
+  {
+    category: "Minimal",
+    img: "/imgs/image-asset (8).jpeg",
+    title: "Harmonic Eccentricity",
+    author: "reyace",
+    price: "$15",
+  },
+];

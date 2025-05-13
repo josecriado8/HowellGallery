@@ -1,0 +1,195 @@
+.gridSection {
+  width: 100vw;
+  min-width: 100vw;
+  margin: 40px 0 0 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.gridContainer {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.gridCategories {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  justify-content: flex-start;
+}
+
+.gridCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 700px) {
+  .gridCategories {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .gridCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px !important;
+  }
+  .card {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.gridCategoryBtn {
+  padding: 6px 18px;
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #111;
+  border-radius: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.15s;
+}
+.gridCategoryBtnActive {
+  border: 2px solid #111;
+  background: #222;
+  color: #fff;
+  font-weight: 600;
+}
+
+.gridTabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 32px 0;
+  font-size: 16px;
+  font-family: inherit;
+  margin-bottom: 24px;
+}
+.gridTabsLabel {
+  color: #222;
+  font-weight: 500;
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.gridTabsDot {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: #222;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.gridTabsIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.gridTabsSpacer {
+  flex: 1;
+}
+.gridTabsLink {
+  color: #222;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  margin-right: 24px;
+}
+
+:global(body.dark-mode) .gridTabsLabel,
+:global(body.dark-mode) .gridTabsLink {
+  color: #ededed !important;
+}
+
+:global(body.dark-mode) .gridTabsDot {
+  background: #ededed !important;
+}
+
+:global(body.dark-mode) .gridTabsIcon {
+  color: #ededed !important;
+  fill: #ededed !important;
+  stroke: #ededed !important;
+}
+
+:global(body.dark-mode) .card {
+  background: #232323 !important;
+  border: 1px solid #333 !important;
+  color: #ededed !important;
+}
+:global(body.dark-mode) .cardCategory {
+  color: #bdbdbd !important;
+}
+:global(body.dark-mode) .cardTitle,
+:global(body.dark-mode) .cardAuthor,
+:global(body.dark-mode) .cardPrice {
+  color: #ededed !important;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.cardCategory {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+}
+.cardImageWrapper {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #f8f8f8;
+  aspect-ratio: 1/1;
+}
+.cardContent {
+  padding: 20px;
+}
+.cardTitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.cardAuthor {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+}
+.cardPrice {
+  font-size: 15px;
+  color: #222;
+  font-weight: 600;
+}

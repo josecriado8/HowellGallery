@@ -1,0 +1,86 @@
+.signupSection {
+  width: 100vw;
+  padding: 48px 0 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.signupContainer {
+  max-width: 480px;
+  width: 100%;
+  text-align: left;
+  padding: 0 24px;
+}
+
+.signupTitle {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.signupSubtitle {
+  color: #222;
+  font-size: 15px;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+.signupForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.signupInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-size: 15px;
+  background: #fff;
+  color: #222;
+}
+
+.signupButton {
+  background: none;
+  border: none;
+  padding: 0 18px;
+  cursor: pointer;
+  color: #222;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.signupButtonIcon {
+  font-size: 20px;
+}
+
+:global(body.dark-mode) .signupSection {
+  background: #181818 !important;
+  border-top: 1px solid #333 !important;
+}
+:global(body.dark-mode) .signupTitle,
+:global(body.dark-mode) .signupSubtitle {
+  color: #ededed !important;
+}
+:global(body.dark-mode) .signupForm {
+  background: #232323 !important;
+  border: 1px solid #444 !important;
+}
+:global(body.dark-mode) .signupInput {
+  background: #232323 !important;
+  color: #ededed !important;
+}
+:global(body.dark-mode) .signupButton {
+  color: #ededed !important;
+}

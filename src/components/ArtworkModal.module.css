@@ -1,0 +1,122 @@
+.artworkModalOverlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s;
+}
+
+.artworkModal {
+  background: none;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 340px;
+  min-height: 420px;
+}
+
+.artworkModalClose {
+  position: absolute;
+  top: -32px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 32px 24px 24px 24px;
+  min-width: 340px;
+  max-width: 95vw;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.cardCategory {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.cardImageWrapper {
+  width: 240px;
+  height: 240px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.cardContent {
+  width: 100%;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.cardAuthor {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 0;
+}
+
+.cardPrice {
+  font-size: 15px;
+  color: #444;
+  margin-top: 8px;
+}
+
+:global(body.dark-mode) .artworkModalOverlay .card {
+  background: #232323 !important;
+  color: #ededed !important;
+}
+
+:global(body.dark-mode) .artworkModalOverlay .cardTitle,
+:global(body.dark-mode) .artworkModalOverlay .cardAuthor,
+:global(body.dark-mode) .artworkModalOverlay .cardPrice {
+  color: #ededed !important;
+}
+
+:global(body.dark-mode) .artworkModalOverlay .cardCategory {
+  color: #bdbdbd !important;
+}
+
+:global(body.dark-mode) .artworkModalOverlay .cardImageWrapper {
+  background: #181818 !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}

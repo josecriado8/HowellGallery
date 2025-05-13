@@ -1,0 +1,33 @@
+.infoSection {
+  width: 100vw;
+  padding: 128px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.infoContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.infoTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 24px;
+  margin-bottom: 100px;
+  font-family: inherit;
+}
+
+:global(body.dark-mode) .infoSection {
+  background: #181818;
+  color: #ededed;
+}
+:global(body.dark-mode) .infoTitle {
+  color: #ededed;
+}
